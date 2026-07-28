@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pixel Coffee</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+background:#FFF8E8;
+
+background-image:
+radial-gradient(#F4D35E 2px,transparent 2px),
+radial-gradient(#2EC4B6 2px,transparent 2px);
+
+background-size:45px 45px;
+background-position:0 0,22px 22px;
+
+color:#2F2F2F;
+
+}
+
+header{
+
+background:linear-gradient(90deg,#2EC4B6,#F4D35E);
+text-align:center;
+padding:40px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+}
+
+.logo{
+
+font-size:80px;
+
+}
+
+header h1{
+
+font-family:'Orbitron',sans-serif;
+font-size:55px;
+letter-spacing:3px;
+margin-top:10px;
+
+}
+
+header p{
+
+font-size:20px;
+margin-top:10px;
+
+}
+
+nav{
+
+background:#F4D35E;
+
+padding:18px;
+
+text-align:center;
+
+position:sticky;
+
+top:0;
+
+z-index:999;
+
+}
+
+nav a{
+
+text-decoration:none;
+
+color:#2F2F2F;
+
+font-weight:bold;
+
+margin:20px;
+
+font-size:18px;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#2EC4B6;
+
+}
+
+section{
+
+padding:70px;
+
+}
+
+.inicio{
+
+text-align:center;
+
+}
+
+.inicio h2{
+
+font-family:'Orbitron',sans-serif;
+
+font-size:38px;
+
+color:#2EC4B6;
+
+margin-bottom:25px;
+
+}
+
+.inicio p{
+
+width:80%;
+
+margin:auto;
+
+font-size:19px;
+
+line-height:1.8;
+
+}
+
+.banner{
+
+margin:40px auto;
+
+width:90%;
+
+max-width:900px;
+
+height:350px;
+
+border-radius:20px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+background:linear-gradient(135deg,#2EC4B6,#F4D35E);
+
+box-shadow:0 15px 30px rgba(0,0,0,.25);
+
+font-size:120px;
+
+}
+
+.boton{
+
+display:inline-block;
+
+margin-top:30px;
+
+padding:15px 35px;
+
+background:#F4D35E;
+
+color:#2F2F2F;
+
+text-decoration:none;
+
+font-weight:bold;
+
+border-radius:50px;
+
+transition:.3s;
+
+}
+
+.boton:hover{
+
+background:#2EC4B6;
+
+color:white;
+
+}
+
+#menu h2{
+
+font-family:'Orbitron',sans-serif;
+
+text-align:center;
+
+font-size:38px;
+
+color:#2EC4B6;
+
+margin-bottom:40px;
+
+}
+
+.menu{
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+flex-wrap:wrap;
+
+}
+
+.tarjeta{
+
+width:260px;
+
+background:white;
+
+border-radius:18px;
+
+padding:25px;
+
+box-shadow:0 10px 20px rgba(0,0,0,.2);
+
+border-top:8px solid #F4D35E;
+
+transition:.35s;
+
+text-align:center;
+
+}
+
+.tarjeta:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 15px 30px rgba(46,196,182,.4);
+
+}
+
+.tarjeta .icono{
+
+font-size:70px;
+
+margin-bottom:15px;
+
+}
+
+.tarjeta h3{
+
+font-family:'Orbitron',sans-serif;
+
+font-size:20px;
+
+color:#2EC4B6;
+
+margin-bottom:15px;
+
+}
+
+.tarjeta p{
+
+line-height:1.6;
+
+}
+
+.precio{
+
+font-size:24px;
+
+font-weight:bold;
+
+margin-top:15px;
+
+color:#F4B400;
+
+}
+
+.ubicacion{
+
+text-align:center;
+
+}
+
+.ubicacion h2{
+
+font-family:'Orbitron',sans-serif;
+
+font-size:38px;
+
+color:#2EC4B6;
+
+margin-bottom:20px;
+
+}
+
+iframe{
+
+width:100%;
+
+height:380px;
+
+border:none;
+
+border-radius:20px;
+
+margin-top:25px;
+
+}
+
+footer{
+
+background:#2EC4B6;
+
+padding:30px;
+
+text-align:center;
+
+margin-top:50px;
+
+}
+
+footer h2{
+
+font-family:'Orbitron',sans-serif;
+
+margin-bottom:10px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo"></div>
+
+<h1>PIXEL COFFEE</h1>
+
+<p>Level Up Your Coffee Break</p>
+
+</header>
+
+<nav>
+
+<a href="#inicio">🏠 Inicio</a>
+
+<a href="#menu">☕ Menú</a>
+
+<a href="#ubicacion">📍 Ubicación</a>
+
+</nav>
+
+<section id="inicio" class="inicio">
+
+<h2>¡Bienvenido a Pixel Coffee!</h2>
+
+<p>
+
+Pixel Coffee es una cafetería inspirada en los videojuegos más famosos.
+Aquí cada bebida representa una franquicia diferente para que disfrutes
+una experiencia única mientras compartes con tus amigos.
+
+</p>
+
+<div class="banner">
+
+
+
+</div>
+
+<a href="#menu" class="boton">
+
+Explorar Menú
+
+</a>
+
+</section>
+
+<section id="menu">
+
+<h2>Menú Gamer</h2>
+
+<div class="menu">
+
+<div class="tarjeta">
+
+<div class="icono"></div>
+
+<h3>Super Mushroom Latte</h3>
+
+<p>
+
+Inspirado en Super Mario.
+
+</p>
+
+<p class="precio">$4.50</p>
+
+</div>
+
+<div class="tarjeta">
+
+<div class="icono"></div>
+
+<h3>Chaos Espresso</h3>
+
+<p>
+
+Inspirado en Sonic.
+
+</p>
+
+<p class="precio">$3.75</p>
+
+</div>
+
+<div class="tarjeta">
+
+<div class="icono"></div>
+
+<h3>Hylian Cappuccino</h3>
+
+<p>
+
+Inspirado en Zelda.
+
+</p>
+
+<p class="precio">$4.80</p>
+
+</div>
+
+<div class="tarjeta">
+
+<div class="icono"></div>
+
+<h3>Creeper Mocha</h3>
+
+<p>
+
+Inspirado en Minecraft.
+
+</p>
+
+<p class="precio">$5.00</p>
+
+</div>
+<div class="tarjeta">
+
+<div class="icono"></div>
+
+<h3>Pikachu Latte</h3>
+
+<p>
+
+Latte dulce con vainilla inspirado en Pokémon.
+
+</p>
+
+<p class="precio">$4.25</p>
+
+</div>
+
+<div class="tarjeta">
+
+<div class="icono"></div>
+
+<h3>Dreamland Frappé</h3>
+
+<p>
+
+Frappé de fresa con crema inspirado en Kirby.
+
+</p>
+
+<p class="precio">$5.20</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="ubicacion" class="ubicacion">
+
+<h2> Encuéntranos</h2>
+
+<p>
+
+Ven a disfrutar de una experiencia única donde el café y los videojuegos se unen.
+
+<br><br>
+
+<strong>Pixel Coffee</strong><br>
+
+Plaza Gamer, San Salvador, El Salvador.
+
+</p>
+
+<iframe
+src="https://maps.google.com/maps?q=San%20Salvador&t=&z=13&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+</section>
+
+<footer>
+
+<h2> PIXEL COFFEE</h2>
+
+<p>
+
+Level Up Your Coffee Break 
+
+</p>
+
+<br>
+
+<p>
+
+© 2026 Pixel Coffee. Todos los derechos reservados.
+
+</p>
+
+<br>
+
+<p>
+
+"Insert Coin... o mejor, pide un café."
+
+</p>
+
+</footer>
+
+</body>
+
+</html>
