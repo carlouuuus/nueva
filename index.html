@@ -2,556 +2,467 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Pixel Coffee</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pixel Coffee</title>
+
+<!-- Tipografías -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+html{
+    scroll-behavior:smooth;
+}
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
-        rel="stylesheet">
+body{
+    font-family:'Poppins',sans-serif;
+    background:#FFF8E8;
+    color:#333;
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    background-image:
+    radial-gradient(#F4D35E 2px,transparent 2px),
+    radial-gradient(#2EC4B6 2px,transparent 2px);
 
-        html {
-            scroll-behavior: smooth;
-        }
+    background-size:40px 40px;
+    background-position:0 0,20px 20px;
+}
 
-        body {
+/* HEADER */
 
-            font-family: 'Poppins', sans-serif;
-            background: #FFF8E8;
+header{
+    background:linear-gradient(90deg,#2EC4B6,#F4D35E);
+    text-align:center;
+    padding:35px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
 
-            background-image:
-                radial-gradient(#F4D35E 2px, transparent 2px),
-                radial-gradient(#2EC4B6 2px, transparent 2px);
+.logo{
+    font-size:70px;
+}
 
-            background-size: 45px 45px;
-            background-position: 0 0, 22px 22px;
+header h1{
+    font-family:'Orbitron',sans-serif;
+    font-size:48px;
+    margin:10px 0;
+}
 
-            color: #2F2F2F;
+header p{
+    font-size:18px;
+}
 
-        }
+/* MENÚ */
 
-        header {
+nav{
+    background:#F4D35E;
+    text-align:center;
+    padding:15px;
+    position:sticky;
+    top:0;
+}
 
-            background: linear-gradient(90deg, #2EC4B6, #F4D35E);
-            text-align: center;
-            padding: 40px;
+nav a{
+    color:#333;
+    text-decoration:none;
+    font-weight:bold;
+    margin:0 20px;
+    transition:.3s;
+}
 
-            box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+nav a:hover{
+    color:#2EC4B6;
+}
 
-        }
+/* SECCIONES */
 
-        .logo {
+section{
+    padding:60px;
+}
 
-            font-size: 80px;
+h2{
+    font-family:'Orbitron',sans-serif;
+    color:#2EC4B6;
+    text-align:center;
+    margin-bottom:25px;
+}
 
-        }
+/* INICIO */
 
-        header h1 {
+.inicio{
+    text-align:center;
+}
 
-            font-family: 'Orbitron', sans-serif;
-            font-size: 55px;
-            letter-spacing: 3px;
-            margin-top: 10px;
+.inicio p{
+    width:80%;
+    margin:auto;
+    line-height:1.7;
+}
 
-        }
+.banner{
 
-        header p {
+    width:90%;
+    max-width:850px;
+    height:300px;
 
-            font-size: 20px;
-            margin-top: 10px;
+    margin:35px auto;
 
-        }
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-        nav {
+    background:linear-gradient(135deg,#2EC4B6,#F4D35E);
 
-            background: #F4D35E;
+    border-radius:20px;
 
-            padding: 18px;
+    font-size:120px;
 
-            text-align: center;
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
 
-            position: sticky;
+}
 
-            top: 0;
+.boton{
 
-            z-index: 999;
+display:inline-block;
 
-        }
+margin-top:30px;
 
-        nav a {
+padding:15px 30px;
 
-            text-decoration: none;
+background:#F4D35E;
 
-            color: #2F2F2F;
+color:#333;
 
-            font-weight: bold;
+text-decoration:none;
 
-            margin: 20px;
+font-weight:bold;
 
-            font-size: 18px;
+border-radius:40px;
 
-            transition: .3s;
+transition:.3s;
 
-        }
+}
 
-        nav a:hover {
+.boton:hover{
 
-            color: #2EC4B6;
+background:#2EC4B6;
 
-        }
+color:white;
 
-        section {
+}
 
-            padding: 70px;
+/* TARJETAS */
 
-        }
+.menu{
 
-        .inicio {
+display:flex;
 
-            text-align: center;
+justify-content:center;
 
-        }
+flex-wrap:wrap;
 
-        .inicio h2 {
+gap:25px;
 
-            font-family: 'Orbitron', sans-serif;
+}
 
-            font-size: 38px;
+.tarjeta{
 
-            color: #2EC4B6;
+width:240px;
 
-            margin-bottom: 25px;
+background:white;
 
-        }
+padding:20px;
 
-        .inicio p {
+text-align:center;
 
-            width: 80%;
+border-radius:15px;
 
-            margin: auto;
+border-top:8px solid #F4D35E;
 
-            font-size: 19px;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
 
-            line-height: 1.8;
+transition:.3s;
 
-        }
+}
 
-        .banner {
+.tarjeta:hover{
 
-            margin: 40px auto;
+transform:translateY(-8px);
 
-            width: 90%;
+}
 
-            max-width: 900px;
+.icono{
 
-            height: 350px;
+font-size:60px;
 
-            border-radius: 20px;
+margin-bottom:15px;
 
-            display: flex;
+}
 
-            justify-content: center;
+.tarjeta h3{
 
-            align-items: center;
+font-family:'Orbitron',sans-serif;
 
-            background: linear-gradient(135deg, #2EC4B6, #F4D35E);
+font-size:18px;
 
-            box-shadow: 0 15px 30px rgba(0, 0, 0, .25);
+color:#2EC4B6;
 
-            font-size: 120px;
+margin-bottom:10px;
 
-        }
+}
 
-        .boton {
+.precio{
 
-            display: inline-block;
+margin-top:15px;
 
-            margin-top: 30px;
+font-size:22px;
 
-            padding: 15px 35px;
+font-weight:bold;
 
-            background: #F4D35E;
+color:#F4B400;
 
-            color: #2F2F2F;
+}
 
-            text-decoration: none;
+/* UBICACIÓN */
 
-            font-weight: bold;
+.ubicacion{
 
-            border-radius: 50px;
+text-align:center;
 
-            transition: .3s;
+}
 
-        }
+iframe{
 
-        .boton:hover {
+width:100%;
 
-            background: #2EC4B6;
+height:350px;
 
-            color: white;
+border:none;
 
-        }
+border-radius:15px;
 
-        #menu h2 {
+margin-top:20px;
 
-            font-family: 'Orbitron', sans-serif;
+}
 
-            text-align: center;
+/* FOOTER */
 
-            font-size: 38px;
+footer{
 
-            color: #2EC4B6;
+background:#2EC4B6;
 
-            margin-bottom: 40px;
+text-align:center;
 
-        }
+padding:25px;
 
-        .menu {
+margin-top:40px;
 
-            display: flex;
+font-weight:bold;
 
-            justify-content: center;
+}
 
-            gap: 30px;
-
-            flex-wrap: wrap;
-
-        }
-
-        .tarjeta {
-
-            width: 260px;
-
-            background: white;
-
-            border-radius: 18px;
-
-            padding: 25px;
-
-            box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
-
-            border-top: 8px solid #F4D35E;
-
-            transition: .35s;
-
-            text-align: center;
-
-        }
-
-        .tarjeta:hover {
-
-            transform: translateY(-10px);
-
-            box-shadow: 0 15px 30px rgba(46, 196, 182, .4);
-
-        }
-
-        .tarjeta .icono {
-
-            font-size: 70px;
-
-            margin-bottom: 15px;
-
-        }
-
-        .tarjeta h3 {
-
-            font-family: 'Orbitron', sans-serif;
-
-            font-size: 20px;
-
-            color: #2EC4B6;
-
-            margin-bottom: 15px;
-
-        }
-
-        .tarjeta p {
-
-            line-height: 1.6;
-
-        }
-
-        .precio {
-
-            font-size: 24px;
-
-            font-weight: bold;
-
-            margin-top: 15px;
-
-            color: #F4B400;
-
-        }
-
-        .ubicacion {
-
-            text-align: center;
-
-        }
-
-        .ubicacion h2 {
-
-            font-family: 'Orbitron', sans-serif;
-
-            font-size: 38px;
-
-            color: #2EC4B6;
-
-            margin-bottom: 20px;
-
-        }
-
-        iframe {
-
-            width: 100%;
-
-            height: 380px;
-
-            border: none;
-
-            border-radius: 20px;
-
-            margin-top: 25px;
-
-        }
-
-        footer {
-
-            background: #2EC4B6;
-
-            padding: 30px;
-
-            text-align: center;
-
-            margin-top: 50px;
-
-        }
-
-        footer h2 {
-
-            font-family: 'Orbitron', sans-serif;
-
-            margin-bottom: 10px;
-
-        }
-    </style>
+</style>
 
 </head>
 
 <body>
+    <!-- ===== HEADER ===== -->
 
-    <header>
+<header>
 
-        <div class="logo"></div>
+    <div class="logo"></div>
 
-        <h1>PIXEL COFFEE</h1>
+    <h1>PIXEL COFFEE</h1>
 
-        <p>Level Up Your Coffee Break</p>
+    <p>Level Up Your Coffee Break</p>
 
-    </header>
+</header>
 
-    <nav>
+<!-- ===== MENÚ ===== -->
 
-        <a href="#inicio">🏠 Inicio</a>
+<nav>
 
-        <a href="#menu">☕ Menú</a>
+    <a href="#inicio">🏠 Inicio</a>
 
-        <a href="#ubicacion">📍 Ubicación</a>
+    <a href="#menu">☕ Menú</a>
 
-    </nav>
+    <a href="#ubicacion">📍 Ubicación</a>
 
-    <section id="inicio" class="inicio">
+</nav>
 
-        <h2>¡Bienvenido a Pixel Coffee!</h2>
+<!-- ===== INICIO ===== -->
 
-        <p>
+<section id="inicio" class="inicio">
 
-            Pixel Coffee es una cafetería inspirada en los videojuegos más famosos.
-            Aquí cada bebida representa una franquicia diferente para que disfrutes
-            una experiencia única mientras compartes con tus amigos.
+    <h2>¡Bienvenido a Pixel Coffee!</h2>
 
-        </p>
+    <p>
 
-        <div class="banner">
+        En Pixel Coffee creemos que cada taza cuenta una historia.
+        Nuestra cafetería combina el sabor del café con la emoción
+        de los videojuegos, ofreciendo bebidas inspiradas en las
+        franquicias más icónicas.
 
+    </p>
 
+    <div class="banner">
+
+        🎮 ☕ ⭐
+
+    </div>
+
+    <a href="#menu" class="boton">
+
+        Explorar Menú
+
+    </a>
+
+</section>
+
+<!-- ===== MENÚ ===== -->
+
+<section id="menu">
+
+    <h2>Menú Gamer</h2>
+
+    <div class="menu">
+
+        <div class="tarjeta">
+
+            <div class="icono"></div>
+
+            <h3>Super Mushroom Latte</h3>
+
+            <p>
+                Latte de vainilla inspirado en Mario.
+            </p>
+
+            <p class="precio">$4.50</p>
 
         </div>
 
-        <a href="#menu" class="boton">
+        <div class="tarjeta">
 
-            Explorar Menú
+            <div class="icono"></div>
 
-        </a>
+            <h3>Chaos Espresso</h3>
 
-    </section>
+            <p>
+                Espresso intenso inspirado en Sonic.
+            </p>
 
-    <section id="menu">
-
-        <h2>Menú Gamer</h2>
-
-        <div class="menu">
-
-            <div class="tarjeta">
-
-                <div class="icono"></div>
-
-                <h3>Super Mushroom Latte</h3>
-
-                <p>
-
-                    Inspirado en Super Mario.
-
-                </p>
-
-                <p class="precio">$4.50</p>
-
-            </div>
-
-            <div class="tarjeta">
-
-                <div class="icono"></div>
-
-                <h3>Chaos Espresso</h3>
-
-                <p>
-
-                    Inspirado en Sonic.
-
-                </p>
-
-                <p class="precio">$3.75</p>
-
-            </div>
-
-            <div class="tarjeta">
-
-                <div class="icono"></div>
-
-                <h3>Hylian Cappuccino</h3>
-
-                <p>
-
-                    Inspirado en Zelda.
-
-                </p>
-
-                <p class="precio">$4.80</p>
-
-            </div>
-
-            <div class="tarjeta">
-
-                <div class="icono"></div>
-
-                <h3>Creeper Mocha</h3>
-
-                <p>
-
-                    Inspirado en Minecraft.
-
-                </p>
-
-                <p class="precio">$5.00</p>
-
-            </div>
-            <div class="tarjeta">
-
-                <div class="icono"></div>
-
-                <h3>Pikachu Latte</h3>
-
-                <p>
-
-                    Latte dulce con vainilla inspirado en Pokémon.
-
-                </p>
-
-                <p class="precio">$4.25</p>
-
-            </div>
-
-            <div class="tarjeta">
-
-                <div class="icono"></div>
-
-                <h3>Dreamland Frappé</h3>
-
-                <p>
-
-                    Frappé de fresa con crema inspirado en Kirby.
-
-                </p>
-
-                <p class="precio">$5.20</p>
-
-            </div>
+            <p class="precio">$3.75</p>
 
         </div>
 
-    </section>
+        <div class="tarjeta">
 
-    <section id="ubicacion" class="ubicacion">
+            <div class="icono"></div>
 
-        <h2> Encuéntranos</h2>
+            <h3>Hylian Cappuccino</h3>
 
-        <p>
+            <p>
+                Cappuccino con canela inspirado en Zelda.
+            </p>
 
-            Ven a disfrutar de una experiencia única donde el café y los videojuegos se unen.
+            <p class="precio">$4.80</p>
 
-            <br><br>
+        </div>
+                <div class="tarjeta">
 
-            <strong>Pixel Coffee</strong><br>
+            <div class="icono"></div>
 
-            Plaza Gamer, San Salvador, El Salvador.
+            <h3>Creeper Mocha</h3>
 
-        </p>
+            <p>
+                Mocha con chocolate inspirado en Minecraft.
+            </p>
 
-        <iframe src="https://maps.google.com/maps?q=San%20Salvador&t=&z=13&ie=UTF8&iwloc=&output=embed">
-        </iframe>
+            <p class="precio">$5.00</p>
 
-    </section>
+        </div>
 
-    <footer>
+        <div class="tarjeta">
 
-        <h2> PIXEL COFFEE</h2>
+            <div class="icono"></div>
 
-        <p>
+            <h3>Pikachu Latte</h3>
 
-            Level Up Your Coffee Break
+            <p>
+                Latte de vainilla y miel inspirado en Pokémon.
+            </p>
 
-        </p>
+            <p class="precio">$4.25</p>
 
-        <br>
+        </div>
 
-        <p>
+        <div class="tarjeta">
 
-            © 2026 Pixel Coffee. Todos los derechos reservados.
+            <div class="icono"></div>
 
-        </p>
+            <h3>Dreamland Frappé</h3>
 
-        <br>
+            <p>
+                Frappé de fresa inspirado en Kirby.
+            </p>
 
-        <p>
+            <p class="precio">$5.20</p>
 
-            "Insert Coin... o mejor, pide un café."
+        </div>
 
-        </p>
+    </div>
 
-    </footer>
+</section>
+
+<!-- ===== UBICACIÓN ===== -->
+
+<section id="ubicacion" class="ubicacion">
+
+    <h2>📍 Ubicación</h2>
+
+    <p>
+
+        ¡Ven a vivir la experiencia Pixel Coffee!
+
+        <br><br>
+
+        Plaza Gamer,
+        San Salvador, El Salvador.
+
+    </p>
+
+    <iframe
+        src="https://maps.google.com/maps?q=San%20Salvador&t=&z=13&ie=UTF8&iwloc=&output=embed">
+    </iframe>
+
+</section>
+<!-- ===== FOOTER ===== -->
+
+<footer>
+
+    <h2>🎮 PIXEL COFFEE</h2>
+
+    <p>Level Up Your Coffee Break ☕</p>
+
+    <br>
+
+    <p>© 2026 Pixel Coffee. Todos los derechos reservados.</p>
+
+    <br>
+
+    <p>"Insert Coin... o mejor, pide un café."</p>
+
+</footer>
 
 </body>
 
